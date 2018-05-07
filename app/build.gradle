@@ -26,17 +26,18 @@ android {
     }
 }
 
-ext.support_version = "27.0.2"
+ext.support_version = "27.1.1"
+ext.constraint_version = "1.1.0"
 ext.arch_runtime_version = "1.1.0"
-ext.arch_version = "1.1.0"
+ext.arch_version = "1.1.1"
 ext.dagger_version = "2.14.1"
 ext.moshi_version = "1.5.0"
 ext.retrofit_version = "2.3.0"
 ext.picasso_version = "2.5.2"
-ext.timber_version = "4.6.0"
+ext.timber_version = "4.7.0"
 ext.databinding_version = "3.0.1"
 ext.rxjava_version = "2.1.8"
-ext.rxandroid_version = "2.0.1"
+ext.rxandroid_version = "2.0.2"
 
 dependencies {
     // kotlin
@@ -78,10 +79,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support:design:$support_version"
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support.constraint:constraint-layout:$constraint_version"
 
     // test
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
